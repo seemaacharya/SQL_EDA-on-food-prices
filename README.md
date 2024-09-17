@@ -15,11 +15,11 @@ Our analysis shows that food prices vary greatly across different regions in Ind
 ## Schema
 ### Drop the table if it already exists
 
-'''sql
+```sql
 DROP TABLE IF EXISTS food_prices_ind;
 ```
--- Create the table with the specified schema
 
+### Create the table with the specified schema
 ```sql
 CREATE TABLE food_prices_ind
 (
