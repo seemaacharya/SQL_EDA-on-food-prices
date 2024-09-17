@@ -9,7 +9,11 @@ This dataset provides detailed records of food prices collected from multiple ma
 ## Objectives
 The analysis aimed to uncover trends and insights related to commodity pricing by zone, identify discrepancies in prices over different years, and evaluate regional variations in the average prices of essential food items. This work involves leveraging SQL for data querying and analysis to provide actionable insights that can support decision-making in food security and economic planning.
 
+## Conclusion
+Our analysis shows that food prices vary greatly across different regions in India. For example, some areas have much higher prices for certain items than others. This information is useful for policymakers and organizations working on food security, as it helps them understand where the most pressing issues are. Future studies could look into how things like supply chain problems or changes in economic policies affect food prices.
+
 ## Schema
+'''sql
 DROP TABLE IF EXISTS food_prices_ind;
 CREATE TABLE food_prices_ind
 (
@@ -28,7 +32,7 @@ CREATE TABLE food_prices_ind
 	price NUMERIC,
 	usdprice NUMERIC
 );
-
+```
 
 ## Business Problems & Solutions
 ```sql
