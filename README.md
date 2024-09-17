@@ -13,9 +13,14 @@ The analysis aimed to uncover trends and insights related to commodity pricing b
 Our analysis shows that food prices vary greatly across different regions in India. For example, some areas have much higher prices for certain items than others. This information is useful for policymakers and organizations working on food security, as it helps them understand where the most pressing issues are. Future studies could look into how things like supply chain problems or changes in economic policies affect food prices.
 
 ## Schema
+### Drop the table if it already exists
 
 '''sql
 DROP TABLE IF EXISTS food_prices_ind;
+```
+-- Create the table with the specified schema
+
+```sql
 CREATE TABLE food_prices_ind
 (
 	date DATE,
