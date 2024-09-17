@@ -358,12 +358,36 @@ ORDER BY
 
 ### Q19. Find out the average prices of each category food products zone wise
 
--- South zone has the highest avg price for cereals and tubers(Potatoes,rice,wheat,wheat flour),North zone hasthe lowest average
--- North East zone has the highest avg price for Milk and dairy, South zone has the lowest average
--- North East zone has the highest avg price for Miscellaneous food(Sugar,salt,jaggery,Tea(black)),Union territory has the lowest average
--- Union Territory has the highest avg price for oil and fats(Ghee,Groundnut,Mustard,palm,soybean,sunflower),Central has the lowest average
--- Union Territory,North East has the highest avg price for pulses and nuts(chickpeas and other types of lentils), Central has the lowest average
--- North East zone has the highest avg price for vegetablesand fruits, South has the lowest average
+--Cereals and Tubers (Potatoes, Rice, Wheat, Wheat Flour):
+
+--The South zone has the highest average price for cereals and tubers, including potatoes, rice, wheat, and wheat flour.
+--The North zone has the lowest average price for these items.
+
+--Milk and Dairy:
+
+--The North East zone has the highest average price for milk and dairy products.
+--The South zone has the lowest average price for milk and dairy products.
+
+--Miscellaneous Foods (Sugar, Salt, Jaggery, Tea (Black)):
+
+--The North East zone has the highest average price for miscellaneous foods, including sugar, salt, jaggery, and black tea.
+--The Union Territory has the lowest average price for these items.
+
+--Oil and Fats (Ghee, Groundnut, Mustard, Palm, Soybean, Sunflower):
+
+--The Union Territory has the highest average price for oil and fats, including ghee, groundnut, mustard, palm oil, soybean oil, and sunflower oil.
+--The Central zone has the lowest average price for these products.
+
+--Pulses and Nuts (Chickpeas and Other Types of Lentils):
+
+--The Union Territory and North East zone have the highest average price for pulses and nuts, including chickpeas and other types of lentils.
+--The Central zone has the lowest average price for these items.
+
+--Vegetables and Fruits:
+
+--The North East zone has the highest average price for vegetables and fruits.
+--The South zone has the lowest average price for vegetables and fruits.
+
 
 ```sql
 SELECT zone,category,ROUND(AVG(price)::numeric, 2) AS avgprice
